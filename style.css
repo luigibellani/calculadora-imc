@@ -1,0 +1,100 @@
+/*fundo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2f2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+/*caixa da calculadora */
+
+.card {
+  background-color: rgb(151, 156, 150);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+/*fonte*/
+h1 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 5px;
+}
+/*subtitulo("calcule seu Índice de massa Corporal")*/
+p {
+  color: #000000;
+  font-size: 14px;
+}
+/* Estilo aplicado a todos os <label> (os textos "Peso (kg):" e "Altura (m ou cm):") */
+label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+/* estilo aplicado a todos os campos de input (peso e altura) */
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+/*estilo do container que agrupa os dois botões (calcular e limpar) */
+.botoes {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+/*estilo aplicado a todos os button da página */
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+/*botao de calcular e cor do texto nele*/
+button:first-child {
+  background-color: #4CAF50;
+  color: rgb(0, 0, 0);
+}
+/*botao de calcular quando o mouse ta em cima*/
+button:first-child:hover {
+  background-color: #45a049;
+}
+/*botao de limpar*/
+button:last-child {
+  background-color: #e0e0e0;
+  color: #333;
+}
+/*botao de limpar com o mouse em cima*/
+button:last-child:hover {
+  background-color: #cccccc;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.resultado h2 {
+  margin: 5px 0;
+  font-size: 28px;
+}
+/*cor do texto do imc resultante*/
+.abaixo h2 { color: #e0a800; }
+.normal h2 { color: #28a745; }
+.sobrepeso h2 { color: #fd7e14; }
+.obesidade h2 { color: #dc3545; }
